@@ -5,10 +5,10 @@ static int instant = 1;
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int centered = 1;                    /* -c option; centers dmenu on screen */
 static int fuzzy = 1; 
-static int min_width = 500;                    /* minimum width when centered */
+static int min_width = 750;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"monospace:size=11"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
@@ -20,7 +20,7 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
-static unsigned int lines      = 8;
+static unsigned int lines      = 7;
 static unsigned int columns    = 3;
 
 /*
